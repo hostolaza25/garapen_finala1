@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
- "metadata": [
+  "metadata": [
     {
       "src": [
         {
@@ -14,17 +14,15 @@
       "includePrivateMembers": true
     }
   ],
-      "dest": "api",
-      "includePrivateMembers": true
-    }
-  ],
   "build": {
     "content": [
       {
         "files": [
           "api/**.yml",
           "api/index.md",
-          "**/*.{md,yml}"
+          "docs/**.md",
+          "index.md",
+          "toc.yml"
         ],
         "exclude": [
           "_site/**",
@@ -39,7 +37,7 @@
         ]
       }
     ],
-    "output": "_site",
+    "dest": "_site",
     "template": [
       "default",
       "modern"
@@ -47,8 +45,7 @@
     "globalMetadata": {
       "_appName": "garapen",
       "_appTitle": "garapen",
-      "_enableSearch": true,
-      "pdf": false
+      "_enableSearch": true
     }
   }
 }
