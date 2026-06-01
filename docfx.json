@@ -14,6 +14,10 @@
       "includePrivateMembers": true
     }
   ],
+      "dest": "api",
+      "includePrivateMembers": true
+    }
+  ],
   "build": {
     "content": [
       {
